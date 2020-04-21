@@ -16,7 +16,7 @@ yarn add w-automatic-iconfont --dev
 支持全局安装：
 
 ```bash
-npm install w-automatic-iconfont --g
+npm install w-automatic-iconfont -g
 ```
 
 ## 🔨 用法

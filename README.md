@@ -14,6 +14,12 @@ npm install w-automatic-iconfont --save-dev
 yarn add w-automatic-iconfont --dev
 ```
 
+support global install:
+
+```bash
+npm install w-automatic-iconfont -g
+```
+
 ## 🔨 Usage
 
 ### 📝 Config file

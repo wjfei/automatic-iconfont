@@ -26,5 +26,6 @@
     "gulp-iconfont": "^10.0.3",
     "gulp-iconfont-css": "^3.0.0",
     "rimraf": "^3.0.0"
-  }
+  },
+  "gitHead": "2f27745d3fe2a65d27c4f39846aa48846878bf4c"
 }
