@@ -4,35 +4,26 @@
 
 [English](./README.md) | 简体中文
 
-## 📦 开始
+## 📦 安装
 
 ```bash
-npm install 
+npm install w-automatic-iconfont --save-dev
 ```
 
 ```bash
-yarn install
+yarn add w-automatic-iconfont --dev
+```
+支持全局安装：
+
+```bash
+npm install w-automatic-iconfont --g
 ```
 
 ## 🔨 用法
 
-1.在`svgs`目录下创建一个文件夹表示icon的分类.
+### 📝 配置文件
 
-2.将svg文件放入刚才创建的文件夹中.
-
-3.执行`build`命令：
-
-```bash
-npm run build 
-```
-
-```bash
-yarn run build
-```
-
-## ⚙️ 配置
-
-在`.autoicon.config.js`文件中自定义构建相关配置
+在您的项目中创建一个配置文件(`.autoicon.config.js`)，内容如下(这也是`automatic-iconfont`的默认配置):
 
 ```js
 module.exports = {
@@ -40,4 +31,33 @@ module.exports = {
     srcDir: "svgs", // 源文件目录 (相对于根目录)
     destDir: "dist" // 生产目录 (相对于根目录)
 }
+```
+
+### ✨ 构建
+
+```bash
+# 获取帮助
+$ auto-iconfont -h
+
+# 使用默认配置生成iconfont
+$ auto-iconfont
+
+# 查看版本
+$ auto-iconfont -v
+
+# 指定svg源文件目录
+$ auto-iconfont -s svgs
+$ auto-iconfont --srcDir svgs
+
+# 指定构建目录
+$ auto-iconfont -d dist
+$ auto-iconfont --destDir dist
+
+# 指定iconfont class类名
+$ auto-iconfont -f autofont
+$ auto-iconfont --fontName autofont
+
+# 指定一个自定义配置文件
+$ auto-iconfont -f .customConfig.js
+$ auto-iconfont --config .customConfig.js
 ```

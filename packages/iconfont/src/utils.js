@@ -1,10 +1,9 @@
-/*
- * @Author: wujingfei 00718
- * @Date: 2020-01-08 09:59:42
- * @Description: Description
- */
-//格式化代码函数,已经用原生方式写好了不需要改动,直接引用就好
-module.exports = function formatJson(json) {
+
+function isString(str) {
+    return Object.prototype.toString.call(str) === "[object String]";
+}
+
+function jsonFomatter(json) {
     let formatted = ""; //转换后的json字符串
     let padIdx = 0; //换行后是否增减PADDING的标识
     const PADDING = "    "; //4个空格符
@@ -42,4 +41,10 @@ module.exports = function formatJson(json) {
         // );
     });
     return formatted;
+}
+
+
+module.exports = {
+    isString,
+    json: jsonFomatter,
 }

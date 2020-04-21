@@ -1,38 +1,25 @@
 # automatic-iconfont
 
-Iconfont is automatically generated from an SVG file
+Iconfont is automatically generated from SVG files.
 
 English | [简体中文](./README-zh_CN.md)
 
-## 📦 Start
+## 📦 Install
 
 ```bash
-npm install 
+npm install w-automatic-iconfont --save-dev
 ```
 
 ```bash
-yarn install
+yarn add w-automatic-iconfont --dev
 ```
 
 ## 🔨 Usage
 
-1.Create a directory representation icon category under the `svgs` directory.
+### 📝 Config file
 
-2.Place the SVG file in the folder you created.
 
-3.Execute the `build` command
-
-```bash
-npm run build 
-```
-
-```bash
-yarn run build
-```
-
-## ⚙️ Configuration
-
-Custom build-related configuration in the `.autoicon.config.js` file
+Create a configuration file (`.autoicon.config.js`) in your project that reads as follows (this is also the default configuration for `w-automatic-iconfont`):
 
 ```js
 module.exports = {
@@ -40,4 +27,33 @@ module.exports = {
     srcDir: "svgs", // Source directory (relative to root)
     destDir: "dist" // Build directory (relative to root)
 }
+```
+
+### ✨ Build
+
+```bash
+# help
+$ auto-iconfont -h
+
+# generate iconfont by default config file.
+$ auto-iconfont
+
+# console package version number
+$ auto-iconfont -v
+
+# Specify the SVG file directory
+$ auto-iconfont -s svgs
+$ auto-iconfont --srcDir svgs
+
+# Specify build directory
+$ auto-iconfont -d dist
+$ auto-iconfont --destDir dist
+
+# Specify custom iconfont className
+$ auto-iconfont -f autofont
+$ auto-iconfont --fontName autofont
+
+# Specify custom config file
+$ auto-iconfont -f .customConfig.js
+$ auto-iconfont --config .customConfig.js
 ```

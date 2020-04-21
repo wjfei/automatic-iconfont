@@ -1,0 +1,15 @@
+{
+  "name": "@automatic/iconfont-example",
+  "version": "1.0.0",
+  "description": "@automatic/iconfont-example",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "auto-iconfont"
+  },
+  "author": "wjfei <wujf1@foxmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@automatic/iconfont": "^1.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "w-automatic-iconfont",
+  "version": "1.0.0",
+  "description": "Iconfont is automatically generated from an SVG file",
+  "module": "dist/index.js",
+  "keywords": [
+    "svg",
+    "iconfont",
+    "gulp"
+  ],
+  "files": [
+    "*"
+  ],
+  "scripts": {
+    "build": "gulp build"
+  },
+  "author": "wjfei <wujf1@foxmail.com>",
+  "license": "MIT",
+  "bin": {
+    "auto-iconfont": "command.js"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-iconfont": "^10.0.3",
+    "gulp-iconfont-css": "^3.0.0",
+    "rimraf": "^3.0.0"
+  }
+}
