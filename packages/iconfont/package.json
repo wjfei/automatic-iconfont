@@ -1,6 +1,6 @@
 {
   "name": "w-automatic-iconfont",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Iconfont is automatically generated from an SVG file",
   "module": "dist/index.js",
   "keywords": [
